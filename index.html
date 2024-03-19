@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pic-editor</h1>
+    </header>
+    <nav>
+      <button class="button" onclick="getRandomImg()">Cambio immagine</button>
+    </nav>
+    <main>
+      <div id="image">
+        <img id="display" />
+      </div>
+      <div id="filter">
+        <label for="seppia">
+          seppia
+          <input type="range" name="" id="seppia" min="0" max="100" value="50"
+        /></label>
+        <label for="satura"
+          >Saturazione
+          <input type="range" name="" id="satura" min="0" max="100" value="50"
+        /></label>
+        <label for="contrasto"
+          >contrasto
+          <input
+            type="range"
+            name=""
+            id="contrasto"
+            min="0"
+            max="5"
+            value="2,5"
+          />
+        </label>
+        <label for="blur">
+          blur
+          <input type="range" name="" id="blur" min="0" max="100" value="50" />
+        </label>
+        <label for="ombra"
+          >ombra
+          <input type="range" name="" id="ombra" min="0" max="5" value="2,5" />
+        </label>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
